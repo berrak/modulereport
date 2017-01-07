@@ -106,15 +106,14 @@ report: coverage
 	@echo "Created a new html coverage report in the htmlcov directory"
 
 pypi: dist
-	PKG_TARBALL := $(shell ls -1 dist/*.gz)
-	@echo "Register first with python3 setup.py register -r https://pypi.python.org/pypi"
+	$(PYTHON) setup.py register"
 	gpg --detach-sign -a $(shell ls -1 dist/*.gz)
 	gpg --detach-sign -a $(shell ls -1 dist/*.whl)
-	twine upload -r pypi
+	twine upload --skip-existing dist/* -r pypi
 
 pypi-test: dist
-	@echo "Register first with python3 setup.py register -r https://pypi.python.org/testpypi"
-	twine upload --skip-existing dist/* -r testpypi
+	$(PYTHON) setup.py register -r https://testpypi.python.org/pypi"
+	twine upload --skip-existing dist/* -r test
 
 dist: clean
 	$(PYTHON) setup.py sdist
