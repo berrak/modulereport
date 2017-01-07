@@ -37,7 +37,7 @@ def main(argv=sys.argv):
     parser.add_argument("-s, --skipreport", help="skip list of all modules", action="store_false", dest='fullreport', default=True)
     parser.add_argument("-l, --loaded", help="show loaded modules", action="store_true", dest='showloaded', default=False)
     parser.add_argument("-m, --missing", help="show missing modules", action="store_true", dest='shownotloaded', default=False)
-    parser.add_argument('-V, --version', action='version',
+    parser.add_argument('-V', action='version',
                         version='%(prog)s: version {version} (Python {pyversion})'.format(version=__version__, pyversion=python_version()))
 
     args = parser.parse_args()

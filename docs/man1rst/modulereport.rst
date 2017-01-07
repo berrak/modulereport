@@ -33,7 +33,7 @@ All options available as of modulereport v\ |release|::
       -s, --skipreport  skip list of all modules
       -l, --loaded      show loaded modules
       -m, --missing     show missing modules
-      -V, --version     show program's version number and exit
+      -V,               show program's version number and exit
 
 
 EXAMPLES
@@ -45,7 +45,7 @@ Show usage::
 
 Show program version::
 
-    modulereport --version
+    modulereport -V
 
 
 SEE ALSO

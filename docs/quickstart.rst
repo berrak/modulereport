@@ -53,7 +53,7 @@ Show help:
 
     modulereport --help
     usage: modulereport [-h] [-s, --skipreport] [-l, --loaded] [-m, --missing]
-                        [-V, --version]
+                        [-V]
                         pathname
     
     positional arguments:
@@ -64,7 +64,7 @@ Show help:
       -s, --skipreport  skip list of all modules
       -l, --loaded      show loaded modules
       -m, --missing     show missing modules
-      -V, --version     show program's version number and exit
+      -V,               show program's version number and exit
 
 
 Reference:

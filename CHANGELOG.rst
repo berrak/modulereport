@@ -12,6 +12,6 @@ History
 
 Initial commit.
 
-0.2.1 (2017-01-07)
+0.3.0 (2017-01-07)
 
-* First pre-release on PyPI.
+* First Beta-release on PyPI.

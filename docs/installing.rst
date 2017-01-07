@@ -27,7 +27,7 @@ With pip:
 
 ::
 
-    $ pip install modulereport
+    $ [sudo] pip install modulereport
 
 
 Uninstalling modulereport
@@ -37,4 +37,4 @@ Uninstall modulereport like so:
 
 ::
 
-    $ pip uninstall modulereport
+    $ [sudo] pip uninstall modulereport
