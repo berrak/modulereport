@@ -20,4 +20,4 @@ modulereport - Module Reporter
 
 __author__ = 'Bertil Kronlund'
 __email__ = 'bertil.kronlund@gmail.com'
-__version__ = '0.3.5'
+__version__ = '0.3.6'
