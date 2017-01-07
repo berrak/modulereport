@@ -75,7 +75,15 @@ setup(
     version=FULL_VERSION,
     description=SHORT_DESCRIPTION,
     long_description=LONG_DESCRIPTION,
-    classifiers=[
+    author='Bertil Kronlund',
+    author_email='bertil.kronlund@gmail.com',
+    url='https://github.com/berrak/modulereport',
+    include_package_data=True,
+    install_requires=INSTALL_REQUIRES,
+    tests_require=TESTS_REQUIRE,
+    license='Apache License, Version 2.0',
+    zip_safe=False,
+        classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
         'Intended Audience :: Developers',
@@ -90,13 +98,5 @@ setup(
         'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Software Development',
     ],
-    author='Bertil Kronlund',
-    author_email='bertil.kronlund@gmail.com',
-    url='https://github.com/berrak/modulereport',
-    include_package_data=True,
-    install_requires=INSTALL_REQUIRES,
-    license='Apache License, Version 2.0',
-    zip_safe=False,
-    keywords=('modulereport'),
-    tests_require=TESTS_REQUIRE
+    keywords=('modulereport, import'),
 )

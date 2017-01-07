@@ -10,6 +10,13 @@ https://github.com/berrak/modulereport/milestones?direction=desc&sort=due_date&s
 History
 -------
 
+Update setup.py keywords
+
+0.3.4 (2017-01-07)
+
+* Update setup.py.
+
+
 Add more tests.
 
 0.3.3 (2017-01-07)
