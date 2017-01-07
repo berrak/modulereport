@@ -103,5 +103,5 @@ setup(
         'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Software Development',
     ],
-    keywords=('modulereport, import'),
+    keywords=('modulereport', 'import'),
 )

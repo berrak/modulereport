@@ -10,6 +10,10 @@ https://github.com/berrak/modulereport/milestones?direction=desc&sort=due_date&s
 History
 -------
 
+0.3.6 (2017-01-07) - Add more keywords.
+
+* Update setup.py.
+
 0.3.5 (2017-01-07) - Update setup.py use utf-8.
 
 * Update setup.py.
