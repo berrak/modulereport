@@ -57,7 +57,7 @@ FULL_VERSION = find_version('modulereport/__init__.py')
 MAJOR_MINOR_VERSION = FULL_VERSION.rsplit(u".", 1)[0]
 
 # TODO: put package requirements here
-INSTALL_REQUIRES = ['cookiecutter']
+INSTALL_REQUIRES = []
 
 TESTS_REQUIRE = ['green>=2.5', 'coverage>=4.2', 'flake8>=3.0', 'check-manifest>=0.31']
 
@@ -97,7 +97,6 @@ setup(
     install_requires=INSTALL_REQUIRES,
     license='Apache License, Version 2.0',
     zip_safe=False,
-    python_requires='>3.0,!=3.1.*,!=3.2.*,!=3.3.*',
-    keywords=('modulereport, Python, project template, package, packaging'),
+    keywords=('modulereport'),
     tests_require=TESTS_REQUIRE
 )
