@@ -107,15 +107,13 @@ report: coverage
 
 pypi: dist
 	PKG_TARBALL := $(shell ls -1 dist/*.gz)
-	@echo "Register first with python3 setup.py register $(shell ls -1 dist/*.gz) -r https://pypi.python.org/pypi"
-	@echo "Register first with python3 setup.py register $(shell ls -1 dist/*.whl) -r https://pypi.python.org/pypi"
+	@echo "Register first with python3 setup.py register -r https://pypi.python.org/pypi"
 	gpg --detach-sign -a $(shell ls -1 dist/*.gz)
 	gpg --detach-sign -a $(shell ls -1 dist/*.whl)
 	twine upload -r pypi
 
 pypi-test: dist
-	@echo "Register first with python3 setup.py register $(shell ls -1 dist/*.gz) -r https://pypi.python.org/testpypi"
-	@echo "Register first with python3 setup.py register $(shell ls -1 dist/*.whl) -r https://pypi.python.org/testpypi"
+	@echo "Register first with python3 setup.py register -r https://pypi.python.org/testpypi"
 	twine upload --skip-existing dist/* -r testpypi
 
 dist: clean
