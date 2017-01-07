@@ -10,6 +10,10 @@ https://github.com/berrak/modulereport/milestones?direction=desc&sort=due_date&s
 History
 -------
 
+0.3.7 (2017-01-07) - Update Makefile.
+
+* Be explicit with register -r (repo).
+
 0.3.6 (2017-01-07) - Add more keywords.
 
 * Update setup.py.
