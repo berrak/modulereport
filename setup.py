@@ -19,8 +19,11 @@ Module Reporter setup.
 
 """
 import re
-import codecs
 import os
+import codecs
+
+from codecs import open
+from os import path
 
 from setuptools import setup
 
@@ -45,10 +48,12 @@ def find_version(*file_paths):
     raise RuntimeError("Unable to find version string.")
 
 
-with open('docs/shortdescription.rst') as description_file:
+here = os.path.abspath(os.path.dirname(__file__))
+
+with open(path.join(here, 'docs/shortdescription.rst'), encoding='utf-8') as description_file:
     SHORT_DESCRIPTION = description_file.read().replace('.. :shortdescription:', '')
 
-with open('docs/longdescription.rst') as long_description_file:
+with open(path.join(here, 'docs/longdescription.rst'), encoding='utf-8') as long_description_file:
     LONG_DESCRIPTION = long_description_file.read().replace('.. :longdescription:', '')
 
 # The full canonical version information, including alpha/beta/rc/git tags.

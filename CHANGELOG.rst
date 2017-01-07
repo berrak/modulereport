@@ -10,29 +10,22 @@ https://github.com/berrak/modulereport/milestones?direction=desc&sort=due_date&s
 History
 -------
 
-Update setup.py keywords
-
-0.3.4 (2017-01-07)
+0.3.5 (2017-01-07) - Update setup.py use utf-8.
 
 * Update setup.py.
 
+0.3.4 (2017-01-07) - Update setup.py keywords
 
-Add more tests.
+* Update setup.py.
 
-0.3.3 (2017-01-07)
+0.3.3 (2017-01-07) - Add more tests.
 
 * Test cli.py and modulesimported.py.
 
-
-Patch release for documentation only.
-
-0.3.2 (2017-01-07)
+0.3.2 (2017-01-07) - Patch release for documentation only.
 
 * Update developers docs.
 
-
-Initial commit.
-
-0.3.0 (2017-01-07)
+0.3.0 (2017-01-07) - Initial commit.
 
 * First Beta-release on PyPI.
