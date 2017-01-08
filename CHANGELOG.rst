@@ -10,6 +10,11 @@ https://github.com/berrak/modulereport/milestones?direction=desc&sort=due_date&s
 History
 -------
 
+
+0.3.9 (2017-01-08) - Add exception handling.
+
+* Add try-execept block in case given pathname is wrong.
+
 0.3.8 (2017-01-08) - Update documentation.
 
 * Add GitHub frontpage user information.

@@ -40,7 +40,9 @@ def main(argv=sys.argv):
                         version='%(prog)s: version {version} (Python {pyversion})'.format(version=__version__, pyversion=python_version()))
 
     args = parser.parse_args()
-
-    show_import_report(args.pathname, args.showloaded, args.shownotloaded, args.fullreport)
+    try:
+        show_import_report(args.pathname, args.showloaded, args.shownotloaded, args.fullreport)
+    except IOError:
+        print("Cannot find python script: '%s'" % args.pathname)
 
     return 0
