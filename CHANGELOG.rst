@@ -10,6 +10,10 @@ https://github.com/berrak/modulereport/milestones?direction=desc&sort=due_date&s
 History
 -------
 
+0.3.8 (2017-01-08) - Update documentation.
+
+* Add GitHub frontpage user information.
+
 0.3.7 (2017-01-07) - Update Makefile.
 
 * Be explicit with register -r (repo).
